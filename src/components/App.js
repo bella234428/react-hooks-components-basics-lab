@@ -1,32 +1,43 @@
 import React from "react";
 
-function NavBar() {
+// Navbar component is already defined
+function Navbar() {
   return (
     <nav>
-      <a href="#home">I'm a link!</a>
+      <h1>My Portfolio</h1>
     </nav>
   );
 }
 
+// Home component is already defined
 function Home() {
   return (
     <div id="home">
-      <h1>Home</h1>
+      <h2>Home</h2>
+      <p>Welcome to my portfolio site.</p>
     </div>
   );
 }
 
-{/* write an <About> component here */}
-
+// You need to create the About component
+function About() {
+  return (
+    <div id="about">
+      <h2>About</h2>
+      {/* You can add more content here if you'd like */}
+    </div>
+  );
+}
 
 function App() {
   return (
-    <div>
-      <NavBar />
-      {/* add the <Home> component here */}
-      {/* add your <About> component here */}
+    <div className="App">
+      <Navbar />
+      <Home />
+      <About />
     </div>
   );
 }
 
 export default App;
+
